@@ -28,3 +28,17 @@ Publications
 <span style="font-size: 9pt">
  [[<font color=red>Project</font>]](https://github.com/wenzhengzeng/MPEblink) [[<font color=red>Paper</font>]](https://arxiv.org/abs/2303.16053) [[<font color=red>Video</font>]](https://www.youtube.com/watch?v=ngME7dym0Uk&t=1s)
 </span>
+
+
+Competitions and awards
+====
+2023: HuaWei Scholarship
+2022: The First Prize Scholarship
+2022: **3rd & Jury Prize** at ECCV 2022 Visual Inductive Priors for Data-Efficient Computer Vision challenge (action recognition track)
+2021: First Prize at China Graduate Student Artificial Intelligence Innovation Competition (**3/1505**)
+2021: Outstanding Graduate
+2021: Excellent Undergraduate Thesis (**Top 3%**)
+2020: Meritorious Winner in Interdisciplinary Contest In Modeling, America
+2020: National Scholarship for Encouragement
+2019 & 2020: Scholarship for Scientific and Technological Innovation
+2018: Scholarship for Academic Excellence
