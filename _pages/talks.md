@@ -15,6 +15,6 @@ author_profile: true
   {% include archive-single-talk.html %}
 {% endfor %} -->
 
-### [Invited Poster &Gaze2023 CVPR Workshop](https://gazeworkshop.github.io/2023/)
+<font size=4 > [Invited Poster & Spotlight Talk at Gaze2023 CVPR Workshop](https://gazeworkshop.github.io/2023/)</font>
 
-Topic: Multi-person Eyeblink Detection (paper accepted by CVPR 2023).
+<font size=2 > Topic: Multi-person Eyeblink Detection (paper accepted by CVPR 2023).</font>
