@@ -9,7 +9,7 @@
 locale                   : "en-US"
 title                    : "Wenzheng Zeng"
 title_separator          : "-"
-name                     : &name "Wenzheng Zeng"
+name                     : &name "Wenzheng Zeng 曾文正"
 description              : &description "personal description"
 url                      : https://wenzhengzeng.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
