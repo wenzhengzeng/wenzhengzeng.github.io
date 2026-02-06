@@ -165,12 +165,26 @@ li {
   margin: 0.4em 0 0.6em 0;
 }
 
+.social-links .icon-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  line-height: 1;
+}
+
+.social-links .icon {
+  width: 0.95em;
+  height: 0.95em;
+  display: inline-block;
+  fill: currentColor;
+}
+
 .social-links .sep {
   color: #666;
   user-select: none;
 }
 
-/* Twitter follow 会被替换成 iframe，这里保证垂直对齐 */
+/* 预留：如果以后再加 iframe，也不会撑高行高 */
 .social-links iframe {
   vertical-align: middle;
   margin: 0;
