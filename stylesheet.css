@@ -124,6 +124,23 @@ li {
   line-height: 1.6;
 }
 
+#footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: none;
+  color: #666;
+  font-size: 14px;
+}
+
+#footer a {
+  color: #2244aa;
+}
+
+#footer-text {
+  color: #666;
+  font-size: 14px;
+}
+
 h2 {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-weight: bold;
