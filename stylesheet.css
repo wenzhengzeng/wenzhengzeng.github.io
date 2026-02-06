@@ -114,6 +114,13 @@ p {
   line-height: 1.6;
 }
 
+/* 清理 HTML 里用于占位的空段落，避免产生大段空白 */
+p:empty {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
 ul {
   padding-left: 1.4em;
   margin: 0.4em 0 0.6em 0;
