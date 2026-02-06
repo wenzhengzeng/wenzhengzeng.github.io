@@ -137,7 +137,7 @@ li {
 #footer a:visited {
   color: #666;
   text-decoration: underline;
-  font-size: inherit;
+  font-size: 0.95em;
 }
 
 #footer a:hover,
