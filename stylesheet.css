@@ -71,10 +71,11 @@ html {
 :root {
   /*
     左侧缩略图统一宽度：
-    - “按 pub 的来，并再加大一点点” → 取 35% 作为目标占比
+    - 为了避免长标题被挤得频繁换行，同时保持两节统一
+    - 取 30% 作为目标占比（更接近你之前的视觉）
     - 但设置上下限，避免在大屏过大/小屏过小
   */
-  --left-thumb-width: clamp(220px, 35%, 280px);
+  --left-thumb-width: clamp(220px, 30%, 260px);
 }
 
 body {
@@ -225,8 +226,8 @@ li {
 .media-entry {
   display: flex;
   align-items: flex-start;
-  gap: 1.25rem;
-  margin: 0.85rem 0;
+  gap: 1rem;          /* 与 publications 对齐 */
+  margin: 0.95rem 0;  /* 与 publications 对齐 */
 }
 
 .media-img {
