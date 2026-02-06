@@ -133,12 +133,20 @@ li {
 }
 
 #footer a {
-  color: #2244aa;
+  color: #666;
+  text-decoration: underline;
+}
+
+#footer a:hover,
+#footer a:focus {
+  color: #666;
+  text-decoration: underline;
 }
 
 #footer-text {
   color: #666;
   font-size: 14px;
+  text-align: center;
 }
 
 h2 {
