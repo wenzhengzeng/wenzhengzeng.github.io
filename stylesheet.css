@@ -91,16 +91,21 @@ strong {
 
 h2 {
   margin: 0;
-  font-weight: 700;
+  font-weight: 800; /* Lato 只有到 700，这里会做“合成加粗”，视觉更接近你参考的粗度 */
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 24px;
   color: #222;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
 }
 
 h2 small {
-  font-size: 0.65em;
+  display: block;      /* 强制换行，变成标题下一行 */
+  margin-top: 0.25em;  /* 与标题留一点间距 */
+  font-size: 0.68em;
   font-weight: 400;
   color: #666;
+  line-height: 1.35;
 }
 
 .papertitle {
