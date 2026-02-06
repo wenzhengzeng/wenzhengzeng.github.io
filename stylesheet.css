@@ -91,9 +91,16 @@ strong {
 
 h2 {
   margin: 0;
-  font-weight: normal;
+  font-weight: 700;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 22px;
+  color: #222;
+}
+
+h2 small {
+  font-size: 0.65em;
+  font-weight: 400;
+  color: #666;
 }
 
 .papertitle {
@@ -107,6 +114,8 @@ h2 {
   margin: 0;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 32px;
+  font-weight: 700;
+  color: #222;
 }
 
 .one {
@@ -140,11 +149,11 @@ span.highlight {
 }
 
 .supmark{
-  font-family: "Charter","Libre Baskerville","Merriweather","Source Serif 4",serif;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
 }
 
 .supmark_1{
-  font-family: "Charter","Libre Baskerville","Merriweather","Source Serif 4",serif;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 0.72em;
   margin-left: -0.12em;
   vertical-align: 0.35em;
