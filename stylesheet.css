@@ -129,7 +129,6 @@ li {
   padding-top: 0.25rem;
   border-top: none;
   color: #666;
-  font-size: 14px;
   text-align: center;
   line-height: 1.5;
 }
@@ -138,6 +137,7 @@ li {
 #footer a:visited {
   color: #666;
   text-decoration: underline;
+  font-size: inherit;
 }
 
 #footer a:hover,
@@ -148,7 +148,6 @@ li {
 
 #footer-text {
   color: #666;
-  font-size: 14px;
   text-align: center;
 }
 
