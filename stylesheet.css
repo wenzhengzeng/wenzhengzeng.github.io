@@ -125,14 +125,17 @@ li {
 }
 
 #footer {
-  margin-top: 3rem;
-  padding-top: 1rem;
+  margin-top: 1.25rem;  /* 缩小与上方内容间距 */
+  padding-top: 0.25rem;
   border-top: none;
   color: #666;
   font-size: 14px;
+  text-align: center;
+  line-height: 1.5;
 }
 
-#footer a {
+#footer a,
+#footer a:visited {
   color: #666;
   text-decoration: underline;
 }
