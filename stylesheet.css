@@ -68,6 +68,15 @@ html {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
 }
 
+:root {
+  /*
+    左侧缩略图统一宽度：
+    - “按 pub 的来，并再加大一点点” → 取 35% 作为目标占比
+    - 但设置上下限，避免在大屏过大/小屏过小
+  */
+  --left-thumb-width: clamp(220px, 35%, 280px);
+}
+
 body {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   color: #222;
@@ -215,16 +224,19 @@ li {
 
 .media-entry {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 1.25rem;
   margin: 0.85rem 0;
 }
 
 .media-img {
-  width: 180px;
-  max-width: 180px;
+  width: var(--left-thumb-width);
+  max-width: var(--left-thumb-width);
+  aspect-ratio: 16 / 9;
   height: auto;
   display: block;
+  object-fit: contain; /* 比赛是 logo/海报，尽量不裁剪 */
+  border-radius: 6px;
 }
 
 .media-body {
@@ -275,16 +287,19 @@ ul.pub-list {
 
 .publication-entry {
   display: flex;
-  align-items: center; /* 保持你原来 table 的“图文垂直居中”视觉 */
+  align-items: flex-start;
   gap: 1rem;
   margin: 0.95rem 0; /* 比之前 table 稍微紧一点点 */
 }
 
 .pub-thumb {
-  width: 220px;       /* 接近你原来 25% * 95% 的视觉宽度 */
-  max-width: 220px;
+  width: var(--left-thumb-width);
+  max-width: var(--left-thumb-width);
+  aspect-ratio: 16 / 9;
   height: auto;
   display: block;
+  object-fit: cover; /* publication 用裁剪缩略图，视觉更整齐 */
+  border-radius: 6px;
 }
 
 .pub-body {
@@ -300,8 +315,15 @@ ul.pub-list {
 }
 
 .pub-meta {
-  margin: 0 0 0.3em 0;
-  line-height: 1.55;
+  margin: 0 0 0.45em 0;
+  line-height: 1.65; /* 回到更接近你之前的“相对更松”的行距 */
+}
+
+/* 让作者行与venue行之间更像之前的 <br> 视觉间隔 */
+.pub-meta br {
+  display: block;
+  content: "";
+  margin: 0.15em 0;
 }
 
 .pub-links a + a {
