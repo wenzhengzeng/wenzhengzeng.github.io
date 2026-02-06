@@ -163,6 +163,11 @@ li {
   font-size: 0.95em; /* credit 那一行整体稍小但别太小 */
 }
 
+#footer a,
+#footer a:visited {
+  font-size: inherit; /* Jon Barron 与 credit 文案同字号 */
+}
+
 .social-links {
   display: flex;
   justify-content: center;
@@ -197,6 +202,47 @@ li {
   margin: 0;
 }
 
+/* ====== Media list (Invited Talk / Competitions) ====== */
+.media-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.4em 0 0.9em 0;
+}
+
+.media-list--loose .media-entry {
+  margin: 1.05rem 0; /* competitions 这块稍微更松一点 */
+}
+
+.media-entry {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin: 0.85rem 0;
+}
+
+.media-img {
+  width: 180px;
+  max-width: 180px;
+  height: auto;
+  display: block;
+}
+
+.media-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.media-title {
+  font-size: 1.05em;
+  line-height: 1.35;
+  margin-bottom: 0.25em;
+}
+
+.media-line {
+  line-height: 1.55;
+  margin: 0.12em 0;
+}
+
 h2 {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-weight: bold;
@@ -218,6 +264,48 @@ table h2 {
   margin: -0.2em 0 0.6em 0;
   font-size: 0.85rem;
   color: #666;
+}
+
+/* ====== Publications (Selected Publications) ====== */
+ul.pub-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.4em 0 0.9em 0;
+}
+
+.publication-entry {
+  display: flex;
+  align-items: center; /* 保持你原来 table 的“图文垂直居中”视觉 */
+  gap: 1rem;
+  margin: 0.95rem 0; /* 比之前 table 稍微紧一点点 */
+}
+
+.pub-thumb {
+  width: 220px;       /* 接近你原来 25% * 95% 的视觉宽度 */
+  max-width: 220px;
+  height: auto;
+  display: block;
+}
+
+.pub-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.pub-title {
+  font-size: 1.06em;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0 0 0.25em 0;
+}
+
+.pub-meta {
+  margin: 0 0 0.3em 0;
+  line-height: 1.55;
+}
+
+.pub-links a + a {
+  margin-left: 0.35em; /* 保持你原来 links“挨得比较近”的感觉 */
 }
 
 .papertitle {
