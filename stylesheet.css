@@ -160,7 +160,7 @@ li {
 
 .footer-credit {
   display: inline-block;
-  font-size: 0.9em; /* credit 那一行整体更小一点 */
+  font-size: 0.95em; /* credit 那一行整体稍小但别太小 */
 }
 
 .social-links {
@@ -207,6 +207,11 @@ h2 {
   margin-bottom: 0.6em;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 1.35rem;
+}
+
+/* 你的页面大量用 table 包标题；table 自带 padding 后就不需要 h2 再额外顶出一大段上边距 */
+table h2 {
+  margin-top: 0;
 }
 
 .pub-legend {
