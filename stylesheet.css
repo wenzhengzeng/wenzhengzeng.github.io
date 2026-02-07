@@ -306,7 +306,7 @@ ul.pub-list {
 
 /* Publications 结束 → 下一节横线（Invited Talk）间距单独加大 */
 ul.pub-list + h2 {
-  margin-top: 3.6rem;
+  margin-top: 1.6rem;
 }
 
 .publication-entry {
