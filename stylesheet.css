@@ -277,7 +277,7 @@ h2 {
 
 /* 第一个 section：让横线更贴近上方内容 */
 h2:first-of-type {
-  margin-top: 0.45rem;
+  margin-top: 0.3rem;
 }
 
 /* 用伪元素画分割线，避免 margin 折叠导致“看不到横线” */
@@ -288,11 +288,8 @@ h2::before {
   margin: 0 0 0.3rem 0; /* 横线到标题更紧一点 */
 }
 
-/* 你的页面大量用 table 包标题；table 自带 padding 后就不需要 h2 再额外顶出一大段上边距 */
-table h2 {
-  /* table cell 本身有 padding，这里把 h2 的上边距略压一点，避免过空 */
-  margin-top: 0.55rem;
-}
+/* 注意：不要在 table 里单独覆盖 h2 的 margin-top。
+   否则会导致“节末尾→横线”间距调了但看起来没变化（尤其是 Selected Publications 标题仍在 table 内）。 */
 
 .pub-legend {
   margin: -0.35em 0 0.22em 0; /* “标题↔小标注”更紧 */
