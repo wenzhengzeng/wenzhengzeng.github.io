@@ -217,18 +217,18 @@ li {
 .media-list {
   list-style: none;
   padding-left: 0;
-  margin: 0.3em 0 0.7em 0;
+  margin: 0.2em 0 0.55em 0;
 }
 
 .media-list--loose .media-entry {
-  margin: 0.85rem 0; /* 再收紧一点点 */
+  margin: 0.75rem 0; /* 再收紧一点点 */
 }
 
 .media-entry {
   display: flex;
   align-items: center; /* 更接近你原来 table 的垂直居中，整体更整齐 */
   gap: 1rem;          /* 与 publications 对齐 */
-  margin: 0.85rem 0;  /* 再紧凑一点 */
+  margin: 0.75rem 0;  /* 再紧凑一点 */
 }
 
 .media-img {
@@ -256,8 +256,8 @@ li {
 }
 
 .media-line {
-  line-height: 1.55;
-  margin: 0.12em 0;
+  line-height: 1.48;
+  margin: 0.08em 0;
 }
 
 h2 {
@@ -268,9 +268,9 @@ h2 {
   padding-bottom: 0;
   /* 更紧凑 + 每节前加淡横线 */
   border-top: 1px solid #eee;
-  padding-top: 0.85rem;
-  margin-top: 1.1rem;
-  margin-bottom: 0.45em;
+  padding-top: 0.55rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.3em;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 1.35rem;
 }
@@ -278,10 +278,12 @@ h2 {
 /* 你的页面大量用 table 包标题；table 自带 padding 后就不需要 h2 再额外顶出一大段上边距 */
 table h2 {
   margin-top: 0;
+  border-top: none;
+  padding-top: 0;
 }
 
 .pub-legend {
-  margin: -0.15em 0 0.45em 0;
+  margin: -0.25em 0 0.3em 0;
   font-size: 0.85rem;
   color: #666;
 }
@@ -290,14 +292,14 @@ table h2 {
 ul.pub-list {
   list-style: none;
   padding-left: 0;
-  margin: 0.3em 0 0.7em 0;
+  margin: 0.2em 0 0.55em 0;
 }
 
 .publication-entry {
   display: flex;
   align-items: center; /* 保持条目视觉整齐 */
   gap: 1rem;
-  margin: 0.8rem 0; /* 再小一点点 */
+  margin: 0.65rem 0; /* 再小一点点 */
 }
 
 .pub-thumb {
@@ -322,18 +324,18 @@ ul.pub-list {
   font-size: 1.06em;
   font-weight: 700;
   line-height: 1.4;
-  margin: 0 0 0.18em 0;
+  margin: 0 0 0.12em 0;
 }
 
 .pub-meta {
-  margin: 0 0 0.28em 0;
-  line-height: 1.58;
+  margin: 0 0 0.22em 0;
+  line-height: 1.45;
 }
 
 /* 让作者行与venue行之间更像之前的 <br> 视觉间隔 */
 .pub-meta br {
   display: block;
-  margin: 0.08em 0;
+  margin: 0.04em 0;
 }
 
 .pub-links a + a {
