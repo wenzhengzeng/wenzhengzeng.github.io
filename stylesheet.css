@@ -267,7 +267,7 @@ h2 {
   border-bottom: none;
   padding-bottom: 0;
   /* 让“上一节末尾 → 分割线”更开阔 */
-  margin-top: 1.9rem;
+  margin-top: 2.8rem;
   /* 标题块本身更紧凑（标题到正文） */
   margin-bottom: 0.2em;
   line-height: 1.15;
