@@ -221,7 +221,7 @@ li {
 }
 
 .media-list--loose .media-entry {
-  margin: 1.05rem 0; /* competitions 这块稍微更松一点 */
+  margin: 0.95rem 0; /* 稍微收紧一点点 */
 }
 
 .media-entry {
@@ -237,6 +237,11 @@ li {
   height: auto;
   display: block;
   border-radius: 6px;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  padding: 2px; /* 白底图更容易与背景区分 */
+  box-sizing: border-box;
 }
 
 .media-body {
@@ -289,7 +294,7 @@ ul.pub-list {
   display: flex;
   align-items: center; /* 保持条目视觉整齐 */
   gap: 1rem;
-  margin: 0.95rem 0; /* 比之前 table 稍微紧一点点 */
+  margin: 0.9rem 0; /* 间距再小一点点 */
 }
 
 .pub-thumb {
@@ -298,6 +303,11 @@ ul.pub-list {
   height: auto;
   display: block;
   border-radius: 6px;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  padding: 2px;
+  box-sizing: border-box;
 }
 
 .pub-body {
@@ -313,15 +323,14 @@ ul.pub-list {
 }
 
 .pub-meta {
-  margin: 0 0 0.45em 0;
+  margin: 0 0 0.35em 0;
   line-height: 1.65; /* 回到更接近你之前的“相对更松”的行距 */
 }
 
 /* 让作者行与venue行之间更像之前的 <br> 视觉间隔 */
 .pub-meta br {
   display: block;
-  content: "";
-  margin: 0.15em 0;
+  margin: 0.12em 0;
 }
 
 .pub-links a + a {
