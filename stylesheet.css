@@ -266,13 +266,18 @@ h2 {
   color: #222;
   border-bottom: none;
   padding-bottom: 0;
-  /* 让“上一节末尾 → 分割线”更开阔（约 1.5x） */
-  margin-top: 1.4rem;
+  /* 让“上一节末尾 → 分割线”更开阔 */
+  margin-top: 1.9rem;
   /* 标题块本身更紧凑（标题到正文） */
   margin-bottom: 0.2em;
   line-height: 1.15;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 1.35rem;
+}
+
+/* 第一个 section：让横线更贴近上方内容 */
+h2:first-of-type {
+  margin-top: 0.45rem;
 }
 
 /* 用伪元素画分割线，避免 margin 折叠导致“看不到横线” */
