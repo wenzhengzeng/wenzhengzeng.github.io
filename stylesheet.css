@@ -285,7 +285,7 @@ h2::before {
   content: "";
   display: block;
   border-top: 1px solid #eee;
-  margin: 0 0 0.3rem 0; /* 横线到标题更紧一点 */
+  margin: 0 0 0.45rem 0; /* 横线到标题更紧一点 */
 }
 
 /* 注意：不要在 table 里单独覆盖 h2 的 margin-top。
