@@ -268,9 +268,12 @@ h2 {
   padding-bottom: 0;
   /* 更紧凑 + 每节前加淡横线 */
   border-top: 1px solid #eee;
-  padding-top: 0.55rem;
-  margin-top: 0.75rem;
-  margin-bottom: 0.3em;
+  /* 让“上一节末尾 → 横线”稍微更开阔 */
+  margin-top: 0.95rem;
+  /* 但标题块本身更紧凑（横线到标题/标题到正文） */
+  padding-top: 0.45rem;
+  margin-bottom: 0.2em;
+  line-height: 1.15;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 1.35rem;
 }
