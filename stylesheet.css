@@ -266,23 +266,27 @@ h2 {
   color: #222;
   border-bottom: none;
   padding-bottom: 0;
-  /* 更紧凑 + 每节前加淡横线 */
-  border-top: 1px solid #eee;
-  /* 让“上一节末尾 → 横线”稍微更开阔 */
+  /* 让“上一节末尾 → 分割线”稍微更开阔 */
   margin-top: 0.95rem;
-  /* 但标题块本身更紧凑（横线到标题/标题到正文） */
-  padding-top: 0.45rem;
+  /* 标题块本身更紧凑（标题到正文） */
   margin-bottom: 0.2em;
   line-height: 1.15;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 1.35rem;
 }
 
+/* 用伪元素画分割线，避免 margin 折叠导致“看不到横线” */
+h2::before {
+  content: "";
+  display: block;
+  border-top: 1px solid #eee;
+  margin: 0 0 0.45rem 0;
+}
+
 /* 你的页面大量用 table 包标题；table 自带 padding 后就不需要 h2 再额外顶出一大段上边距 */
 table h2 {
-  margin-top: 0;
-  border-top: none;
-  padding-top: 0;
+  /* table cell 本身有 padding，这里把 h2 的上边距略压一点，避免过空 */
+  margin-top: 0.55rem;
 }
 
 .pub-legend {
@@ -302,7 +306,7 @@ ul.pub-list {
   display: flex;
   align-items: center; /* 保持条目视觉整齐 */
   gap: 1rem;
-  margin: 0.65rem 0; /* 再小一点点 */
+  margin: 0.78rem 0; /* 每篇 pub 之间距离增大一点 */
 }
 
 .pub-thumb {
