@@ -75,7 +75,8 @@ html {
     - 取 30% 作为目标占比（更接近你之前的视觉）
     - 但设置上下限，避免在大屏过大/小屏过小
   */
-  --left-thumb-width: clamp(220px, 30%, 260px);
+  /* 上限收回到 220px，避免图片被放大后发糊 */
+  --left-thumb-width: clamp(180px, 28%, 220px);
 }
 
 body {
@@ -225,7 +226,7 @@ li {
 
 .media-entry {
   display: flex;
-  align-items: flex-start;
+  align-items: center; /* 更接近你原来 table 的垂直居中，整体更整齐 */
   gap: 1rem;          /* 与 publications 对齐 */
   margin: 0.95rem 0;  /* 与 publications 对齐 */
 }
@@ -233,10 +234,8 @@ li {
 .media-img {
   width: var(--left-thumb-width);
   max-width: var(--left-thumb-width);
-  aspect-ratio: 16 / 9;
   height: auto;
   display: block;
-  object-fit: contain; /* 比赛是 logo/海报，尽量不裁剪 */
   border-radius: 6px;
 }
 
@@ -288,7 +287,7 @@ ul.pub-list {
 
 .publication-entry {
   display: flex;
-  align-items: flex-start;
+  align-items: center; /* 保持条目视觉整齐 */
   gap: 1rem;
   margin: 0.95rem 0; /* 比之前 table 稍微紧一点点 */
 }
@@ -296,10 +295,8 @@ ul.pub-list {
 .pub-thumb {
   width: var(--left-thumb-width);
   max-width: var(--left-thumb-width);
-  aspect-ratio: 16 / 9;
   height: auto;
   display: block;
-  object-fit: cover; /* publication 用裁剪缩略图，视觉更整齐 */
   border-radius: 6px;
 }
 
