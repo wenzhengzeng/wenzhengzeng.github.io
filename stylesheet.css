@@ -344,7 +344,7 @@ ul.pub-list + h2 {
 }
 
 .pub-thumb-placeholder {
-  height: 158px;
+  height: 148px;
   display: flex;
   align-items: center;
   justify-content: center;
