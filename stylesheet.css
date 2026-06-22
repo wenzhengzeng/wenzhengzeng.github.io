@@ -64,11 +64,21 @@
 }
 
 html {
-  background-color: #f7f6f2;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  background-color: var(--bg);
+  font-family: var(--font-body);
 }
 
 :root {
+  --font-body: 'EB Garamond', Georgia, 'Times New Roman', serif;
+  --font-ui: 'Lato', Verdana, Helvetica, sans-serif;
+  --font-mono: 'DM Mono', 'Courier New', monospace;
+  --bg: #f7f6f2;
+  --ink: #1a1a18;
+  --muted: #6b6b60;
+  --rule: #d8d8cc;
+  --link: #1a5fb4;
+  --link-hover: #b85c38;
+  --accent: #b85c38;
   /*
     左侧缩略图统一宽度：
     - 为了避免长标题被挤得频繁换行，同时保持两节统一
@@ -80,25 +90,25 @@ html {
 }
 
 body {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  color: #222;
+  font-family: var(--font-body);
+  color: var(--ink);
   margin: 50px auto;
   padding: 0 80px 60px;
   max-width: 900px;
-  background-color: #f7f6f2;
-  font-size: 16px;
-  line-height: 1.6;
+  background-color: var(--bg);
+  font-size: 17px;
+  line-height: 1.58;
   -webkit-font-smoothing: antialiased;
 }
 
 a {
-  color: #2244aa;
+  color: var(--link);
   text-decoration: none;
 }
 
 a:focus,
 a:hover {
-  color: #1630a0;
+  color: var(--link-hover);
   text-decoration: underline;
 }
 
@@ -109,20 +119,21 @@ tr,
 p,
 a,
 li {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.58;
 }
 
 strong {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 16px;
+  color: var(--ink);
+  font-family: inherit;
+  font-size: inherit;
 }
 
 p {
   margin: 0.4em 0 0.6em 0;
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 17px;
+  line-height: 1.58;
 }
 
 /* 清理 HTML 里用于占位的空段落，避免产生大段空白 */
@@ -261,18 +272,19 @@ li {
 }
 
 h2 {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-weight: bold;
-  color: #222;
+  font-family: var(--font-mono);
+  font-weight: 400;
+  color: var(--accent);
   border-bottom: none;
   padding-bottom: 0;
   /* 让“上一节末尾 → 分割线”更开阔 */
   margin-top: 1.6rem;
   /* 标题块本身更紧凑（标题到正文） */
   margin-bottom: 0.2em;
-  line-height: 1.15;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 1.35rem;
+  line-height: 1.3;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 /* 第一个 section：让横线更贴近上方内容 */
@@ -284,7 +296,7 @@ h2:first-of-type {
 h2::before {
   content: "";
   display: block;
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--rule);
   margin: 0 0 0.45rem 0; /* 横线到标题更紧一点 */
 }
 
@@ -293,8 +305,9 @@ h2::before {
 
 .pub-legend {
   margin: -0.35em 0 0.22em 0; /* “标题↔小标注”更紧 */
+  font-family: var(--font-ui);
   font-size: 0.85rem;
-  color: #666;
+  color: var(--muted);
 }
 
 /* ====== Publications (Selected Publications) ====== */
@@ -335,10 +348,12 @@ ul.pub-list + h2 {
 }
 
 .pub-title {
+  font-family: var(--font-ui);
   font-size: 1.06em;
   font-weight: 700;
   line-height: 1.4;
   margin: 0 0 0.12em 0;
+  color: var(--ink);
 }
 
 .pub-meta {
@@ -352,15 +367,20 @@ ul.pub-list + h2 {
   margin: 0.04em 0;
 }
 
+.pub-links a {
+  font-family: var(--font-ui);
+  font-size: 0.9em;
+}
+
 .pub-links a + a {
   margin-left: 0.35em; /* 保持你原来 links“挨得比较近”的感觉 */
 }
 
 .papertitle {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: var(--font-ui);
   font-size: 16px;
   font-weight: bold;
-  color: #222;
+  color: var(--ink);
   margin: 0 0 0.3em 0;
   line-height: 1.4;
 }
@@ -369,11 +389,16 @@ ul.pub-list + h2 {
   margin: 0 0 0.25em 0;
   padding-bottom: 0;
   border-bottom: none;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #222;
+  font-family: var(--font-body);
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--ink);
   line-height: 1.2;
+}
+
+img.hoverZoomLink {
+  display: block;
+  border-radius: 6px;
 }
 
 .one {
