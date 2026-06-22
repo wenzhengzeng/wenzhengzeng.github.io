@@ -343,6 +343,19 @@ ul.pub-list + h2 {
   box-sizing: border-box;
 }
 
+.pub-thumb-placeholder {
+  aspect-ratio: 16 / 10;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .pub-body {
   flex: 1;
   min-width: 0;
@@ -369,6 +382,12 @@ ul.pub-list + h2 {
 }
 
 .pub-links a {
+  font-family: var(--font-ui);
+  font-size: 0.9em;
+}
+
+.pub-links .coming-soon {
+  color: var(--muted);
   font-family: var(--font-ui);
   font-size: 0.9em;
 }
